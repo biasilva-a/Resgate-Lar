@@ -1,0 +1,114 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+
+.left {
+  flex: 1;
+  background-color: #DCE9C6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  flex-direction: column;
+}
+
+.left img{
+   max-width: 45%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.left h2 {
+  color: #2F5D20;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+
+.right {
+  flex: 1;
+  background-color: #a4c291; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.login-box {
+  background-color: white;
+  padding: 30px;
+  border-radius: 12px;
+  width: 80%;
+  max-width: 350px;
+  text-align: center;
+}
+
+.login-box h1 {
+  color: #2F5D20;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+label {
+  display: block;
+  text-align: left;
+  margin-top: 10px;
+  color: #2F5D20;
+  font-size: 0.9rem;
+}
+
+input, button {
+  margin: 8px 0;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  font-size: 0.9rem;
+  outline: none;
+}
+
+
+input {
+  background-color: #f3f3f3;
+}
+
+
+button {
+  background-color: #2F5D20;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #3e8e41;
+}
+
+.cadastro-text {
+  font-size: 0.85rem;
+  color: #2F5D20;
+  margin-top: 15px;
+}
+
+.cadastro-link {
+  display: inline-block;
+  margin-top: 5px;
+  font-size: 0.85rem;
+  color: #4CAF50;
+  text-decoration: none;
+}
+
+.cadastro-link:hover {
+  text-decoration: underline;
+}
