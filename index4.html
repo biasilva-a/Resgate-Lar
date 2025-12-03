@@ -44,7 +44,64 @@
             </div>
         </nav>
     </header>
-<main>
+    <main>
+
+        <div class="card animal-card" style="width: 18rem;">
+            <img src="imagens/foto_do_max.jpg" class="card-img-top" alt="Max, um cão amigável">
+            <div class="card-body text-center">
+                <h5 class="card-title">Max</h5>
+                <p class="card-text">Idade: 2 anos</p>
+
+                <button type="button" class="btn btn-adotar" data-bs-toggle="modal" data-bs-target="#modalMax">
+                    Ver Perfil e Adotar
+                </button>
+
+            </div>
+        </div>
+
+        <div class="modal fade" id="modalMax" tabindex="-1" aria-labelledby="modalMaxLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalMaxLabel">Perfil Detalhado: Max (2 anos)</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body row">
+
+                        <div class="col-md-6">
+                            <img src="imagens/foto_do_max_grande.jpg" class="img-fluid mb-3" alt="Max">
+                            <h6>História de Max:</h6>
+                            <p>Max foi encontrado abandonado próximo a um mercado. Ele sofreu maus-tratos, mas é um cão
+                                resiliente e cheio de alegria. É sociável com crianças, mas prefere ser o único cão da
+                                casa. Seu passado traumático exige um lar com paciência e muito carinho.</p>
+                        </div>
+
+                        <div class="col-md-6">
+                            <h6>Detalhes para Adoção:</h6>
+                            <ul class="list-unstyled">
+                                <li>Temperamento: Brincalhão e protetor.</li>
+                                <li>Saúde: Castrado e com todas as vacinas em dia.</li>
+                                <li>Ambiente Ideal: Casa com quintal seguro.</li>
+                            </ul>
+
+                            <hr>
+
+                            <h6>Onde Encontrá-lo:</h6>
+                            <p>Max está atualmente no Abrigo Resgate & Lar.</p>
+                            <p class="mb-0">
+                                <i class="fas fa-map-marker-alt"></i> Endereço: Rua das Flores, 123 - Centro
+                                (Visitas com hora marcada).
+                            </p>
+
+                            <a href="fale-conosco.html" class="btn btn-success mt-3 w-100">Iniciar Processo de
+                                Adoção</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
 
 
 
@@ -52,9 +109,7 @@
 
 
 
-
-
-    <section class="footer">
+        <section class="footer">
 
             <p>
                 &copy;2025 - Resgate & lar - todos os direitos reservados.
