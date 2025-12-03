@@ -1,82 +1,127 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
-body, html {
-    width: 100%;
-    overflow-x: hidden;
-    background-color: #F5EDE0 !important; 
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f5ede0;
 }
 
-/*Cabeçalho e navegação*/
-
-header, 
 .navbar {
-    background-color: #DBC9B2 !important;
-    width: 100% !important;
-    height: 100px !important; 
-    margin-bottom: 0 !important;
-    border: none;
-    padding: 0 20px; 
-    display: flex;
-    align-items: center;
+    z-index: 1050; 
 }
 
-/* LOGO */
-.navbar-brand img {
-    height: 80px; 
-    width: auto;
-    position: static; 
-    display: block;
+@media (max-width: 991.98px) {
+    #navbarNav {
+        background-color: #DBC9B2 !important; 
+        padding-bottom: 10px; 
+    }
 }
 
-/*  MENU */
+/* LINKS DO MENU */
 .navbar-nav {
-    margin-left: auto;
-    margin-right: 20px;
-    display: flex;
-    align-items: center;
-    height: 100%;
+    padding: 10px 0;
 }
 
-.nav-link {
-    color: #3e2723 !important;
-    font-size: 1.3rem; 
-    font-weight: 600;
-    margin-left: 25px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+/* --- LADO ESQUERDO (Imagem e Boas-vindas) --- */
+.left {
+  background-color: #f5ede0; 
+  min-height: 100vh; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  flex-direction: column;
 }
 
-.nav-link:hover {
-    color: #A67B51 !important; 
+.left h2 {
+  color: #d9985f;
+  font-size: 1.4rem;
+  font-weight: bold;
 }
 
-.card .btn-primary {
-    background-color: #A67B51 !important; 
-    border-color: #A67B51 !important;
+.left img {
+  max-width: 45%;
+  height: auto;
+  margin-bottom: 20px; 
 }
 
-.card .btn-primary:hover {
-    background-color: #D9985F !important; 
-    border-color: #D9985F !important;
+/* --- LADO DIREITO --- */
+.right {
+  background-color: #a67b51;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
 }
 
-.modal .btn-success {
-    background-color: #A67B51 !important; 
-    border-color: #A67B51 !important;
+/* --- CAIXA DE CADASTRO --- */
+.cadastro-box {
+  background-color: white;
+  padding: 30px;
+  border-radius: 12px;
+  width: 100%; 
+  max-width: 350px;
+  text-align: center;
 }
 
-.modal .btn-success:hover {
-    background-color: #D9985F !important; 
-    border-color: #D9985F !important;
+/* --- TÍTULO DO CADASTRO --- */
+.cadastro-box h1 {
+  color: #d9985f;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  font-weight: bold;
 }
 
-/* RODAPÉ */
-.footer {
-    background-color: #DBC9B2;
-    color: #4A4A4A;
-    text-align: center;
-    padding: 20px;
+/* --- CAMPOS E BOTÕES --- */
+input, button {
+  margin: 8px 0;
+  padding: 10px;
+  /* O Bootstrap form-control garante a largura de 100% */
+  border: none;
+  border-radius: 10px;
+  font-size: 0.9rem;
+  outline: none;
+}
+
+input {
+  background-color: #f3f3f3;
+}
+
+
+button {
+  background-color: #d9985f;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #c0804b;
+}
+
+/* --- LINK DO LOGIN --- */
+.cadastro-text { 
+  font-size: 0.85rem;
+  color: #4a4a4a;
+  margin-top: 15px;
+}
+
+.login-link {
+  display: inline-block;
+  margin-top: 5px;
+  font-size: 0.85rem;
+  color: #d9985f;
+  text-decoration: none;
+}
+
+.login-link:hover {
+  text-decoration: underline;
 }
