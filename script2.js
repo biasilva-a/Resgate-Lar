@@ -8,7 +8,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const email = emailInput.value.trim();
     const senha = senhaInput.value;
-
     const usuarios = JSON.parse(localStorage.getItem("usuarios")) || [];
 
     const usuario = usuarios.find(
@@ -17,14 +16,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if (usuario) {
       alert("Login bem-sucedido! Bem-vindo(a), " + usuario.nome);
-      
+      window.location.href = "index3.html"; 
     } else {
-      alert("E-mail ou senha incorretos.");
+
+      alert("E-mail ou senha incorretos! Verifique seus dados.");
     }
- window.location.href = "index3.html";
-
-    form.reset();
-
-   
   });
 });

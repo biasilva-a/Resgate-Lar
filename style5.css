@@ -1,0 +1,209 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    width: 100%;
+    overflow-x: hidden;
+    background-color: #F5EDE0 !important;
+}
+
+/* CABEÇALHO E NAVEGAÇÃO*/
+header, 
+.navbar {
+    background-color: #DBC9B2 !important;
+    width: 100% !important;
+    min-height: 100px !important; 
+    margin-bottom: 0 !important;
+    border: none;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+}
+
+/* LOGO */
+.navbar-brand img {
+    height: 80px;
+    width: auto;
+    position: static;
+    display: block;
+}
+
+/* MENU */
+.navbar-nav {
+    margin-left: auto;
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.nav-link {
+    color: #3e2723 !important;
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-left: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.nav-link:hover {
+    color: #A67B51 !important;
+}
+
+/* TEXTOS E CONTEÚDO*/
+.container .row {
+    align-items: center;
+    padding: 40px 0;
+}
+
+/* Título */
+.col-md-7 h2 {
+    color: #A67B51; 
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-bottom: 25px;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* Texto */
+.col-md-7 p {
+    color: #3e2723;
+    font-size: 1.3rem;
+    line-height: 1.6;
+    padding-right: 30px;
+}
+
+/* Imagem lateral */
+.col-md-5 img {
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+/* BOTÕES */
+
+.btn-primary, 
+.btn-success, 
+.btn-custom-pix {
+    background-color: #A67B51 !important; 
+    border-color: #A67B51 !important;
+    color: #fff !important;
+}
+
+.btn-primary:hover, 
+.btn-success:hover, 
+.btn-custom-pix:hover {
+    background-color: #D9985F !important; 
+    border-color: #D9985F !important;
+    color: #fff !important;
+}
+
+/* SEÇÃO CONTADORES*/
+.secao-contadores {
+    background-color: #DBC9B2;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.icone-contador {
+    font-size: 2.5rem;
+    color: #D9985F; 
+    margin-bottom: 10px;
+    display: block;
+}
+
+.coracao-icone {
+    color: #D9985F; 
+}
+
+.numero-contador {
+    font-size: 4rem;
+    font-weight: 700;
+    color: #A67B51;
+    line-height: 1;
+    margin-bottom: 5px;
+}
+
+.texto-contador {
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: #4A4A4A;
+    text-transform: uppercase;
+}
+
+/*FALE CONOSCO */
+.fale-conosco {
+    background-color: #4A4A4A;
+}
+
+.fale-conosco,
+.fale-conosco h1,
+.fale-conosco span {
+    color: #F5EDE0 !important;
+}
+
+.icone-cor,
+.icone-social {
+    color: #F5EDE0 !important;
+}
+
+.fale-conosco .btn-outline-light:hover {
+    background-color: #A67B51 !important;
+    border-color: #A67B51 !important;
+    color: #fff !important;
+}
+
+/* CARDS (Adote)*/
+.card {
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* RODAPÉ E UTILITÁRIOS */
+.footer {
+    background-color: #DBC9B2;
+    color: #4A4A4A;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Utilitários sem root */
+.text-primaria {
+    color: #A67B51 !important;
+}
+
+.bg-primaria-claro {
+    background-color: #eaddc7 !important;
+}
+
+.border-primaria {
+    border-color: #A67B51 !important;
+    opacity: 0.5;
+}
+
+/*  Ajustes */
+
+.btn-outline-dark {
+    color: #A67B51 !important;  
+    border-color: #A67B51 !important;
+}
+
+.btn-outline-dark:hover {
+    background-color: #A67B51 !important;
+    border-color: #A67B51 !important;
+    color: #fff !important; 
+}
+
+.text-secundaria {
+    color: #3e2723 !important; 
+}
+
+.list-group-item {
+    border-color: rgba(166, 123, 81, 0.3); 
+}

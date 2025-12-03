@@ -53,6 +53,26 @@ header,
     color: #A67B51 !important; 
 }
 
+.card .btn-primary {
+    background-color: #A67B51 !important; 
+    border-color: #A67B51 !important;
+}
+
+.card .btn-primary:hover {
+    background-color: #D9985F !important; 
+    border-color: #D9985F !important;
+}
+
+.modal .btn-success {
+    background-color: #A67B51 !important; 
+    border-color: #A67B51 !important;
+}
+
+.modal .btn-success:hover {
+    background-color: #D9985F !important; 
+    border-color: #D9985F !important;
+}
+
 
 
 
