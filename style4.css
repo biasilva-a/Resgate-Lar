@@ -83,7 +83,6 @@ body {
 input, button {
   margin: 8px 0;
   padding: 10px;
-  /* O Bootstrap form-control garante a largura de 100% */
   border: none;
   border-radius: 10px;
   font-size: 0.9rem;
