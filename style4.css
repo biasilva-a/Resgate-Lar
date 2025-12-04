@@ -10,31 +10,24 @@ body, html {
     background-color: #F5EDE0 !important;
 }
 
-/* --- CABEÇALHO E NAVEGAÇÃO --- */
+/* CABEÇALHO E NAVEGAÇÃO*/
 header, 
 .navbar {
     background-color: #DBC9B2 !important;
     width: 100% !important;
-    height: 100px !important; 
+    min-height: 100px !important; 
     margin-bottom: 0 !important;
     border: none;
     padding: 0 20px;
     display: flex;
     align-items: center;
-    position: relative;
-    z-index: 1050;
 }
 
-/* GARANTE QUE O LOGO FIQUE ALINHADO NO MEIO DA BARRA */
-.navbar-brand {
-    display: flex;
-    align-items: center;
-    height: 100%;
-}
-
+/* LOGO */
 .navbar-brand img {
     height: 80px;
     width: auto;
+    position: static;
     display: block;
 }
 
@@ -56,41 +49,6 @@ header,
 
 .nav-link:hover {
     color: #A67B51 !important;
-}
-
-/* --- RESPONSIVO (CORREÇÃO PARA CELULAR) --- */
-@media (max-width: 991.98px) {
-    /* Destrava a altura fixa de 100px para o menu poder abrir */
-    .navbar {
-        height: auto !important; 
-        padding: 10px 20px;
-    }
-
-    /* O fundo do menu aberto */
-    #navbarNav {
-        background-color: #DBC9B2 !important;
-        width: 100%;
-        z-index: 1050;
-        padding-bottom: 20px;
-        position: absolute;
-        top: 100%;
-        left: 0;
-    }
-
-    /* Alinhamento dos links */
-    .navbar-nav {
-        flex-direction: column;
-        align-items: flex-start;
-        width: 100%;
-        margin: 0;
-        padding-top: 10px;
-    }
-
-    .nav-link {
-        margin-left: 0;
-        margin-top: 15px;
-        display: block;
-    }
 }
 
 /* --- ESTILOS DOS BOTÕES --- */
