@@ -7,50 +7,48 @@
 body, html {
     width: 100%;
     overflow-x: hidden;
-    background-color: #F5EDE0 !important; 
+    background-color: #F5EDE0 !important;
 }
 
-/*Cabeçalho e navegação*/
-
+/* CABEÇALHO E NAVEGAÇÃO*/
 header, 
 .navbar {
     background-color: #DBC9B2 !important;
     width: 100% !important;
-    height: 100px !important; 
+    min-height: 100px !important; 
     margin-bottom: 0 !important;
     border: none;
-    padding: 0 20px; 
+    padding: 0 20px;
     display: flex;
     align-items: center;
 }
 
 /* LOGO */
 .navbar-brand img {
-    height: 80px; 
+    height: 80px;
     width: auto;
-    position: static; 
+    position: static;
     display: block;
 }
 
-/*  MENU */
+/* MENU */
 .navbar-nav {
     margin-left: auto;
     margin-right: 20px;
     display: flex;
     align-items: center;
-    height: 100%;
 }
 
 .nav-link {
     color: #3e2723 !important;
-    font-size: 1.3rem; 
+    font-size: 1.3rem;
     font-weight: 600;
     margin-left: 25px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .nav-link:hover {
-    color: #A67B51 !important; 
+    color: #A67B51 !important;
 }
 
 
