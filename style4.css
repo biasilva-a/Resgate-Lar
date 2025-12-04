@@ -10,12 +10,11 @@ body, html {
     background-color: #F5EDE0 !important;
 }
 
-/* --- CABEÇALHO E NAVEGAÇÃO (Igual ao do Doe) --- */
+/* --- CABEÇALHO E NAVEGAÇÃO --- */
 header, 
 .navbar {
     background-color: #DBC9B2 !important;
     width: 100% !important;
-    /* Aqui está o truque: usamos min-height ou tratamos no responsivo */
     height: 100px !important; 
     margin-bottom: 0 !important;
     border: none;
@@ -23,14 +22,19 @@ header,
     display: flex;
     align-items: center;
     position: relative;
-    z-index: 1050; /* Garante que fique na frente */
+    z-index: 1050;
 }
 
-/* LOGO */
+/* GARANTE QUE O LOGO FIQUE ALINHADO NO MEIO DA BARRA */
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
 .navbar-brand img {
     height: 80px;
     width: auto;
-    position: static;
     display: block;
 }
 
@@ -54,7 +58,7 @@ header,
     color: #A67B51 !important;
 }
 
-/* --- RESPONSIVO (O "Segredo" para funcionar no celular) --- */
+/* --- RESPONSIVO (CORREÇÃO PARA CELULAR) --- */
 @media (max-width: 991.98px) {
     /* Destrava a altura fixa de 100px para o menu poder abrir */
     .navbar {
@@ -68,11 +72,15 @@ header,
         width: 100%;
         z-index: 1050;
         padding-bottom: 20px;
+        position: absolute;
+        top: 100%;
+        left: 0;
     }
 
+    /* Alinhamento dos links */
     .navbar-nav {
         flex-direction: column;
-        align-items: flex-start; /* Alinha links à esquerda no celular */
+        align-items: flex-start;
         width: 100%;
         margin: 0;
         padding-top: 10px;
@@ -85,7 +93,7 @@ header,
     }
 }
 
-/* --- ESTILOS DOS BOTÕES E RODAPÉ (Do seu código original) --- */
+/* --- ESTILOS DOS BOTÕES --- */
 .card .btn-primary {
     background-color: #A67B51 !important; 
     border-color: #A67B51 !important;
@@ -106,6 +114,7 @@ header,
     border-color: #D9985F !important;
 }
 
+/* --- RODAPÉ --- */
 .footer {
     background-color: #DBC9B2;
     color: #4A4A4A;
