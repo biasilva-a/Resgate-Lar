@@ -7,7 +7,8 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #fff;
+    /* Ajustei a cor do body para ser o fundo geral claro */
+    background-color: #F5EDE0; 
 }
 
 .container {
@@ -18,7 +19,7 @@ body {
 /* --- LADO ESQUERDO (Imagem e Boas-vindas) --- */
 .left {
     flex: 1;
-    background-color: #F5EDE0;
+    background-color: #F5EDE0; /* Fundo claro */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -39,10 +40,15 @@ body {
     font-weight: bold;
 }
 
+/* Estilo para o logo que só aparece no mobile (escondido no desktop) */
+.logo-mobile {
+    display: none;
+}
+
 /* --- LADO DIREITO --- */
 .right {
     flex: 1;
-    background-color: #A67B51; 
+    background-color: #A67B51; /* Fundo escuro do formulário no Desktop */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -50,7 +56,6 @@ body {
 }
 
 /* --- CAIXA DE LOGIN --- */
-
 .login-box {
     background-color: white; 
     padding: 30px;
@@ -121,4 +126,38 @@ button:hover {
 
 .cadastro-link:hover {
     text-decoration: underline;
+}
+
+/* --- RESPONSIVIDADE --- */
+
+@media (max-width: 768px) {
+    
+    .container {
+        flex-direction: column;
+        height: auto; 
+    }
+
+    .left {
+        display: none;
+    }
+
+    .right {
+        width: 100%;
+        min-height: 100vh; 
+        background-color: #F5EDE0;
+        padding: 40px 20px; 
+    }
+
+    .login-box {
+        width: 100%;
+        max-width: 400px; 
+        margin: 0 auto;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); 
+    }
+    
+    .logo-mobile {
+        display: block;
+        max-width: 100px;
+        margin: 0 auto 20px auto;
+    }
 }

@@ -15,6 +15,7 @@ body {
 .container {
   display: flex;
   height: 100vh;
+  /* Garante que o conteúdo não ultrapasse o topo/fundo da tela */
 }
 
 /* --- LADO ESQUERDO (Imagem e Boas-vindas) --- */
@@ -27,6 +28,11 @@ body {
   text-align: center;
   padding: 20px;
   flex-direction: column;
+}
+
+/* Classe de auxílio para o logo no mobile (escondido no desktop) */
+.logo-mobile {
+    display: none;
 }
 
 .left h2 {
@@ -123,4 +129,25 @@ button:hover {
 
 .login-link:hover {
   text-decoration: underline;
+}
+
+/* --- RESPONSIVIDADE --- */
+@media (max-width: 768px) {
+    
+    .container {
+        flex-direction: column;
+        height: auto; 
+    }
+
+    .left { 
+        display: none;
+    }
+
+    .right {
+        width: 100%;
+        min-height: 100vh;
+        background-color: #f5ede0; 
+        padding: 40px 20px;
+    }
+
 }
