@@ -16,12 +16,13 @@ header,
 .navbar {
     background-color: #DBC9B2 !important;
     width: 100% !important;
-    height: 100px !important; 
+    min-height: 100px;
     margin-bottom: 0 !important;
     border: none;
     padding: 0 20px; 
     display: flex;
     align-items: center;
+    position: relative;
     z-index: 1050; 
 }
 
@@ -39,7 +40,6 @@ header,
     margin-right: 20px;
     display: flex;
     align-items: center;
-    height: 100%;
 }
 
 .nav-link {
@@ -57,32 +57,34 @@ header,
 /*Responsivo: telas menores.*/
 @media (max-width: 991.98px) {
     .navbar {
-        height: auto !important; 
+        padding: 10px 20px;
     }
-    
+
     #navbarNav {
         background-color: #DBC9B2 !important;
-        padding: 10px 0;
-        z-index: 1040; 
+        width: 100%;
+        position: absolute; 
+        top: 100%;
+        left: 0;
+        z-index: 1050;
+        padding-bottom: 20px;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
     }
 
     .navbar-nav {
         flex-direction: column;
-        align-items: flex-start;
-        margin: 0;
-        padding: 10px 20px;
+        align-items: center;
         width: 100%;
-    }
-    
-    .nav-item {
-        margin: 5px 0;
+        margin: 0;
+        padding-top: 10px;
     }
 
     .nav-link {
         margin-left: 0;
+        margin-top: 15px;
+        display: block;
     }
 }
-
 
 /* ESTILOS DOS BOTÕES */
 
