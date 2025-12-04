@@ -7,30 +7,30 @@
 body, html {
     width: 100%;
     overflow-x: hidden;
-    background-color: #F5EDE0 !important; 
+    background-color: #F5EDE0 !important;
 }
 
-/*Cabeçalho e navegação*/
-
+/* --- CABEÇALHO E NAVEGAÇÃO (Igual ao do Doe) --- */
 header, 
 .navbar {
     background-color: #DBC9B2 !important;
     width: 100% !important;
-    min-height: 100px;
+    /* Aqui está o truque: usamos min-height ou tratamos no responsivo */
+    height: 100px !important; 
     margin-bottom: 0 !important;
     border: none;
-    padding: 0 20px; 
+    padding: 0 20px;
     display: flex;
     align-items: center;
     position: relative;
-    z-index: 1050; 
+    z-index: 1050; /* Garante que fique na frente */
 }
 
 /* LOGO */
 .navbar-brand img {
-    height: 80px; 
+    height: 80px;
     width: auto;
-    position: static; 
+    position: static;
     display: block;
 }
 
@@ -44,36 +44,35 @@ header,
 
 .nav-link {
     color: #3e2723 !important;
-    font-size: 1.3rem; 
+    font-size: 1.3rem;
     font-weight: 600;
     margin-left: 25px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .nav-link:hover {
-    color: #A67B51 !important; 
+    color: #A67B51 !important;
 }
 
-/*Responsivo: telas menores.*/
+/* --- RESPONSIVO (O "Segredo" para funcionar no celular) --- */
 @media (max-width: 991.98px) {
+    /* Destrava a altura fixa de 100px para o menu poder abrir */
     .navbar {
+        height: auto !important; 
         padding: 10px 20px;
     }
 
+    /* O fundo do menu aberto */
     #navbarNav {
         background-color: #DBC9B2 !important;
         width: 100%;
-        position: absolute; 
-        top: 100%;
-        left: 0;
         z-index: 1050;
         padding-bottom: 20px;
-        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
     }
 
     .navbar-nav {
         flex-direction: column;
-        align-items: center;
+        align-items: flex-start; /* Alinha links à esquerda no celular */
         width: 100%;
         margin: 0;
         padding-top: 10px;
@@ -86,8 +85,7 @@ header,
     }
 }
 
-/* ESTILOS DOS BOTÕES */
-
+/* --- ESTILOS DOS BOTÕES E RODAPÉ (Do seu código original) --- */
 .card .btn-primary {
     background-color: #A67B51 !important; 
     border-color: #A67B51 !important;
@@ -108,7 +106,6 @@ header,
     border-color: #D9985F !important;
 }
 
-/* RODAPÉ */
 .footer {
     background-color: #DBC9B2;
     color: #4A4A4A;
