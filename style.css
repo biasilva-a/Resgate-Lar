@@ -1,0 +1,153 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f5ede0;
+  height: auto;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+  /* Garante que o conteúdo não ultrapasse o topo/fundo da tela */
+}
+
+/* --- LADO ESQUERDO (Imagem e Boas-vindas) --- */
+.left {
+  flex: 1;
+  background-color: #f5ede0; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  flex-direction: column;
+}
+
+/* Classe de auxílio para o logo no mobile (escondido no desktop) */
+.logo-mobile {
+    display: none;
+}
+
+.left h2 {
+  color: #d9985f;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.left img {
+  max-width: 45%;
+  height: auto;
+  margin-bottom: 20px; 
+}
+
+/* --- LADO DIREITO --- */
+.right {
+  flex: 1;
+  background-color: #a67b51; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* --- CAIXA DE CADASTRO --- */
+.cadastro-box {
+  background-color: white;
+  padding: 30px;
+  border-radius: 12px;
+  width: 80%;
+  max-width: 350px;
+  text-align: center;
+}
+
+/* --- TÍTULO DO CADASTRO --- */
+.cadastro-box h1 {
+  color: #d9985f;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+/* --- CAMPOS E BOTÕES --- */
+label {
+  display: block;
+  text-align: left;
+  margin-top: 10px;
+  color: #4a4a4a;
+  font-size: 0.9rem;
+}
+
+input, button {
+  margin: 8px 0;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  font-size: 0.9rem;
+  outline: none;
+}
+
+input {
+  background-color: #f3f3f3;
+}
+
+
+button {
+  background-color: #d9985f;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #c0804b;
+}
+
+/* --- LINK DO LOGIN --- */
+
+.login-text {
+  font-size: 0.85rem;
+  color: #4a4a4a;
+  margin-top: 15px;
+}
+
+.login-link {
+  display: inline-block;
+  margin-top: 5px;
+  font-size: 0.85rem;
+  color: #d9985f;
+  text-decoration: none;
+}
+
+.login-link:hover {
+  text-decoration: underline;
+}
+
+/* --- RESPONSIVIDADE --- */
+@media (max-width: 768px) {
+    
+    .container {
+        flex-direction: column;
+        height: auto; 
+    }
+
+    .left { 
+        display: none;
+    }
+
+    .right {
+        width: 100%;
+        min-height: 100vh;
+        background-color: #f5ede0; 
+        padding: 40px 20px;
+    }
+
+}

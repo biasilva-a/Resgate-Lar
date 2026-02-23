@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freddy - AmigoCão</title>
+    <link rel="stylesheet" href="style7.css">
+</head>
+<body>
+
+    <div id="main-wrapper">
+        <div id="chat-container">
+            <header class="chat-header">
+                <div class="user-info">
+                    <img src="imagens/FREDDY - bot.png" alt="Freddy" class="bot-photo">
+                    <div class="bot-details">
+                        <span class="bot-name">Freddy - o AmigoCão</span>
+                        <span class="bot-status">Online</span>
+                    </div>
+                </div>
+            </header>
+
+            <main class="chat-window">
+                <div id="step1" class="step active">
+                    <div class="message-row">
+                        <div class="bubble">
+                            <p>🐾 Olá! Que alegria saber que você quer adotar um de nossos amiguinhos!</p>
+                            <p>Para darmos continuidade ao processo, preciso que você envie:</p>
+                            <ul class="doc-list">
+                                <li>RG ou CNH</li>
+                                <li>Comprovante de residência</li>
+                                <li>CPF</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="action-area">
+                        <input type="file" id="fileInput" multiple style="display: none;">
+                        <button class="btn-action" id="btnUpload">📎 Enviar documentos</button>
+                    </div>
+                </div>
+
+                <div id="step2" class="step">
+                    <div class="message-row">
+                        <div class="bubble">
+                            <p>Perfeito! ✅ Recebi seus documentos!</p>
+                            <p>Agora preciso do seu e-mail para enviarmos a confirmação.</p>
+                            <input type="email" id="userEmail" class="chat-input" placeholder="Digite seu e-mail...">
+                        </div>
+                    </div>
+                    <div class="action-area">
+                        <button class="btn-action" id="btnEnviarEmail">Confirmar E-mail</button>
+                    </div>
+                </div>
+
+                <div id="step3" class="step">
+                    <div class="message-row">
+                        <div class="bubble">
+                            <p>Maravilha! Tudo certo! 🎉</p>
+                            <p>Recebemos seus documentos. Em breve você receberá um e-mail em <strong id="displayEmail"></strong> com:</p>
+                            <div class="email-info">
+                                <p>✅ Análise dos documentos</p>
+                                <p>✅ Próximos passos</p>
+                                <p>✅ Agendamento de visita</p>
+                            </div>
+                            <p>Logo você terá um novo amiguinho! 🐶💚</p>
+                        </div>
+                    </div>
+                    <div class="final-container">
+                        <p class="status-text">Processo concluído!</p>
+                        <button class="btn-final" id="btnRestart">🏠 Voltar para o Início</button>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <script src="script3.js"></script>
+</body>
+</html>

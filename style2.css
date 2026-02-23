@@ -1,0 +1,163 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    /* Ajustei a cor do body para ser o fundo geral claro */
+    background-color: #F5EDE0; 
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+/* --- LADO ESQUERDO (Imagem e Boas-vindas) --- */
+.left {
+    flex: 1;
+    background-color: #F5EDE0; /* Fundo claro */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    flex-direction: column;
+}
+
+.left img {
+    max-width: 45%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.left h2 {
+    color: #d9985f;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+/* Estilo para o logo que só aparece no mobile (escondido no desktop) */
+.logo-mobile {
+    display: none;
+}
+
+/* --- LADO DIREITO --- */
+.right {
+    flex: 1;
+    background-color: #A67B51; /* Fundo escuro do formulário no Desktop */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* --- CAIXA DE LOGIN --- */
+.login-box {
+    background-color: white; 
+    padding: 30px;
+    border-radius: 12px;
+    width: 80%;
+    max-width: 350px;
+    text-align: center;
+}
+
+/* TÍTULO DO LOGIN */
+.login-box h1 {
+    color: #d9985f; 
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* --- CAMPOS E BOTÕES --- */
+label {
+    display: block;
+    text-align: left;
+    margin-top: 10px;
+    color: #4A4A4A;
+    font-size: 0.9rem;
+}
+
+input, button {
+    margin: 8px 0;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    outline: none;
+}
+
+input {
+    background-color: #f3f3f3;
+}
+
+button {
+    background-color: #d9985f;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #c0804b; 
+}
+
+/* --- LINKS DE CADASTRO --- */
+.cadastro-text {
+    font-size: 0.85rem;
+    color: #4A4A4A;
+    margin-top: 15px;
+}
+
+.cadastro-link {
+    display: inline-block;
+    margin-top: 5px;
+    font-size: 0.85rem;
+    color: #d9985f;
+    text-decoration: none;
+}
+
+.cadastro-link:hover {
+    text-decoration: underline;
+}
+
+/* --- RESPONSIVIDADE --- */
+
+@media (max-width: 768px) {
+    
+    .container {
+        flex-direction: column;
+        height: auto; 
+    }
+
+    .left {
+        display: none;
+    }
+
+    .right {
+        width: 100%;
+        min-height: 100vh; 
+        background-color: #F5EDE0;
+        padding: 40px 20px; 
+    }
+
+    .login-box {
+        width: 100%;
+        max-width: 400px; 
+        margin: 0 auto;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); 
+    }
+    
+    .logo-mobile {
+        display: block;
+        max-width: 100px;
+        margin: 0 auto 20px auto;
+    }
+}

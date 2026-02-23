@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> Adoção - Resgate & Lar </title>
+    <link rel="stylesheet" href="style4.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+
+<!-- CABEÇALHO MENU DE BOTÕES -->
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="inicio.html">
+                    <img src="imagens/Resgate & Lar.png" alt="Logotipo Resgate & Lar">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="inicio.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="adote.html">Adote</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="doe.html">Doe</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="saibamais.html">Saiba mais</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- CARDS DE CADA PET!-->
+
+    <main>
+        <div class="container my-5">
+
+            <div class="text-center py-4">
+                <h1 class="display-5 fw-bold">Adote um Amigo</h1>
+                <p class="lead">Encontre o companheiro perfeito para sua família!</p>
+            </div>
+
+            <div class="row justify-content-center row-cols-1 row-cols-md-3 row-cols-lg-5 g-4">
+
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <img src="imagens/MAX.png" class="card-img-top" alt="Max, um cão amigável">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Max</h5>
+                            <p class="card-text">Raça: SRD | Idade: 2 anos</p>
+                            <button type="button" class="btn btn-primary w-100" data-bs-toggle="modal"
+                                data-bs-target="#modalMax">
+                                Ver Perfil e Adotar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <img src="imagens/MIA.png" class="card-img-top" alt="Mia, uma gata tranquila">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Mia</h5>
+                            <p class="card-text">Raça: Siamês | Idade: 1 ano</p>
+                            <button type="button" class="btn btn-primary w-100" data-bs-toggle="modal"
+                                data-bs-target="#modalMia">
+                                Ver Perfil e Adotar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <img src="imagens/BUDDY.png" class="card-img-top" alt="Buddy, um Beagle enérgico">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Buddy</h5>
+                            <p class="card-text">Raça: Beagle | Idade: 3 anos</p>
+                            <button type="button" class="btn btn-primary w-100" data-bs-toggle="modal"
+                                data-bs-target="#modalBuddy">
+                                Ver Perfil e Adotar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <img src="imagens/LUNA.png" class="card-img-top" alt="Luna, uma Persa reservada">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Luna</h5>
+                            <p class="card-text">Raça: Persa | Idade: 2 anos</p>
+                            <button type="button" class="btn btn-primary w-100" data-bs-toggle="modal"
+                                data-bs-target="#modalLuna">
+                                Ver Perfil e Adotar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <img src="imagens/THOR.png" class="card-img-top" alt="Thor, um Pinscher protetor">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Thor</h5>
+                            <p class="card-text">Raça: Pinscher | Idade: 4 anos</p>
+                            <button type="button" class="btn btn-primary w-100" data-bs-toggle="modal"
+                                data-bs-target="#modalThor">
+                                Ver Perfil e Adotar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <img src="imagens/OLIVER.png" class="card-img-top" alt="Oliver, um filhote SRD">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Oliver</h5>
+                            <p class="card-text">Raça: SRD | Idade: 6 meses</p>
+                            <button type="button" class="btn btn-primary w-100" data-bs-toggle="modal"
+                                data-bs-target="#modalOliver">
+                                Ver Perfil e Adotar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <img src="imagens/LAILA.png" class="card-img-top" alt="Laila, uma Golden dócil">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Laila</h5>
+                            <p class="card-text">Raça: Golden | Idade: 1 ano</p>
+                            <button type="button" class="btn btn-primary w-100" data-bs-toggle="modal"
+                                data-bs-target="#modalLaila">
+                                Ver Perfil e Adotar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <img src="imagens/CLEO.png" class="card-img-top" alt="Cleo, uma Sphynx apegada">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Cleo</h5>
+                            <p class="card-text">Raça: Sphynx | Idade: 5 anos</p>
+                            <button type="button" class="btn btn-primary w-100" data-bs-toggle="modal"
+                                data-bs-target="#modalCleo">
+                                Ver Perfil e Adotar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <img src="imagens/TOBBY.png" class="card-img-top" alt="Tobby, um Poodle calmo">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Tobby</h5>
+                            <p class="card-text">Raça: Poodle | Idade: 8 anos</p>
+                            <button type="button" class="btn btn-primary w-100" data-bs-toggle="modal"
+                                data-bs-target="#modalTobby">
+                                Ver Perfil e Adotar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <img src="imagens/ZOE.png" class="card-img-top" alt="Zoe, uma Maine Coon sociável">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Zoe</h5>
+                            <p class="card-text">Raça: Maine Coon | Idade: 3 anos</p>
+                            <button type="button" class="btn btn-primary w-100" data-bs-toggle="modal"
+                                data-bs-target="#modalZoe">
+                                Ver Perfil e Adotar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <img src="imagens/SALSICHA.png" class="card-img-top" alt="Salsicha, um Dachshund brincalhão">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Salsicha</h5>
+                            <p class="card-text">Raça: Dachshund | Idade: 2 anos</p>
+                            <button type="button" class="btn btn-primary w-100" data-bs-toggle="modal"
+                                data-bs-target="#modalSalsicha">
+                                Ver Perfil e Adotar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <img src="imagens/MILO.png" class="card-img-top" alt="Milo, um Bengal ativo">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Milo</h5>
+                            <p class="card-text">Raça: Bengal | Idade: 1 ano</p>
+                            <button type="button" class="btn btn-primary w-100" data-bs-toggle="modal"
+                                data-bs-target="#modalMilo">
+                                Ver Perfil e Adotar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <img src="imagens/KOBE.png" class="card-img-top" alt="Kobe, um Boxer enérgico">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Kobe</h5>
+                            <p class="card-text">Raça: Boxer | Idade: 6 anos</p>
+                            <button type="button" class="btn btn-primary w-100" data-bs-toggle="modal"
+                                data-bs-target="#modalKobe">
+                                Ver Perfil e Adotar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <img src="imagens/NALA.png" class="card-img-top" alt="Nala, uma Ragdoll tranquila">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Nala</h5>
+                            <p class="card-text">Raça: Ragdoll | Idade: 4 anos</p>
+                            <button type="button" class="btn btn-primary w-100" data-bs-toggle="modal"
+                                data-bs-target="#modalNala">
+                                Ver Perfil e Adotar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <img src="imagens/PATCH.png" class="card-img-top" alt="Patch, um SRD filhote">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Patch</h5>
+                            <p class="card-text">Raça: SRD | Idade: 7 meses</p>
+                            <button type="button" class="btn btn-primary w-100" data-bs-toggle="modal"
+                                data-bs-target="#modalPatch">
+                                Ver Perfil e Adotar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Modal de cada pet -->
+
+        <div class="modal fade" id="modalMax" tabindex="-1" aria-labelledby="modalMaxLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalMaxLabel">Perfil Detalhado: Max (2 anos)</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body row">
+                        <div class="col-md-6 text-center">
+                            <img src="imagens/MAX.png" class="img-fluid rounded mb-3" alt="Max">
+                            <h6>História de Max:</h6>
+                            <p>Max foi resgatado após maus-tratos. É um cão resiliente e cheio de alegria. Prefere ser o
+                                único cão da casa, mas ama crianças. Necessita de paciência e carinho.</p>
+                        </div>
+                        <div class="col-md-6">
+                            <h6>Detalhes para Adoção:</h6>
+                            <ul class="list-unstyled">
+                                <li>Temperamento: Brincalhão e protetor.</li>
+                                <li>Saúde: Castrado, vacinas e vermífugos em dia.</li>
+                                <li>Ambiente Ideal: Casa com quintal seguro.</li>
+                            </ul>
+                            <hr>
+                            <h6>Onde Encontrá-lo:</h6>
+                            <p>Max está no Abrigo Resgate & Lar.<br>(Visitas com hora marcada).</p>
+                            <a href="chatbot.html" class="btn btn-success mt-3 w-100">Iniciar Processo de
+                                Adoção</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="modalMia" tabindex="-1" aria-labelledby="modalMiaLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalMiaLabel">Perfil Detalhado: Mia (1 ano)</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body row">
+                        <div class="col-md-6 text-center">
+                            <img src="imagens/MIA.png" class="img-fluid rounded mb-3" alt="Mia">
+                            <h6>História de Mia:</h6>
+                            <p>Mia é uma gata resgatada de uma colônia de rua. Apesar do passado, é muito tranquila e
+                                adora passar horas observando o sol pela janela. Perfeita para um lar calmo.</p>
+                        </div>
+                        <div class="col-md-6">
+                            <h6>Detalhes para Adoção:</h6>
+                            <ul class="list-unstyled">
+                                <li>Temperamento: Calma, independente, mas carinhosa.</li>
+                                <li>Saúde: Castrada, vacinas em dia e testada negativa para FIV/FeLV.</li>
+                                <li>Ambiente Ideal: Apartamentos e casas tranquilas.</li>
+                            </ul>
+                            <hr>
+                            <h6>Onde Encontrá-la:</h6>
+                            <p>Mia está no Gatil da Esperança.<br>(Visitas com hora marcada).</p>
+                            <a href="chatbot.html" class="btn btn-success mt-3 w-100">Iniciar Processo de
+                                Adoção</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="modalBuddy" tabindex="-1" aria-labelledby="modalBuddyLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalBuddyLabel">Perfil Detalhado: Buddy (3 anos)</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body row">
+                        <div class="col-md-6 text-center">
+                            <img src="imagens/BUDDY.png" class="img-fluid rounded mb-3" alt="Buddy">
+                            <h6>História de Buddy:</h6>
+                            <p>Buddy é um Beagle típico: cheio de energia e com um nariz que não para. Foi entregue
+                                porque o antigo dono não tinha tempo para seus passeios diários. Precisa de uma rotina
+                                ativa.</p>
+                        </div>
+                        <div class="col-md-6">
+                            <h6>Detalhes para Adoção:</h6>
+                            <ul class="list-unstyled">
+                                <li>Temperamento: Curioso, agitado e muito sociável.</li>
+                                <li>Saúde: Castrado e vacinas em dia.</li>
+                                <li>Ambiente Ideal: Família que goste de trilhas e longos passeios.</li>
+                            </ul>
+                            <hr>
+                            <h6>Onde Encontrá-lo:</h6>
+                            <p>Buddy está no Lar dos Cães Ativos.<br>(Visitas com hora marcada).</p>
+                            <a href="chatbot.html" class="btn btn-success mt-3 w-100">Iniciar Processo de
+                                Adoção</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="modalLuna" tabindex="-1" aria-labelledby="modalLunaLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalLunaLabel">Perfil Detalhado: Luna (2 anos)</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body row">
+                        <div class="col-md-6 text-center">
+                            <img src="imagens/LUNA.png" class="img-fluid rounded mb-3" alt="Luna">
+                            <h6>História de Luna:</h6>
+                            <p>Luna é uma Persa pura, muito delicada e elegante. Foi resgatada de um criador. É um pouco
+                                medrosa no início, mas depois se torna uma excelente companhia de colo.</p>
+                        </div>
+                        <div class="col-md-6">
+                            <h6>Detalhes para Adoção:</h6>
+                            <ul class="list-unstyled">
+                                <li>Temperamento: Reservada, dócil.</li>
+                                <li>Saúde: Castrada, necessita de escovação diária (pelagem longa).</li>
+                                <li>Ambiente Ideal: Casa sem crianças muito pequenas ou outros pets agitados.</li>
+                            </ul>
+                            <hr>
+                            <h6>Onde Encontrá-la:</h6>
+                            <p>Luna está no Projeto Gatos de Raça.<br>(Visitas com hora marcada).</p>
+                            <a href="chatbot.html" class="btn btn-success mt-3 w-100">Iniciar Processo de
+                                Adoção</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="modalThor" tabindex="-1" aria-labelledby="modalThorLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalThorLabel">Perfil Detalhado: Thor (4 anos)</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body row">
+                        <div class="col-md-6 text-center">
+                            <img src="imagens/THOR.png" class="img-fluid rounded mb-3" alt="Thor">
+                            <h6>História de Thor:</h6>
+                            <p>Thor é um Pinscher que leva a sério o papel de cão de guarda, apesar do tamanho. Foi
+                                abandonado. É extremamente leal ao seu tutor, mas precisa de um treinamento firme e
+                                gentil para controlar a ansiedade.</p>
+                        </div>
+                        <div class="col-md-6">
+                            <h6>Detalhes para Adoção:</h6>
+                            <ul class="list-unstyled">
+                                <li>Temperamento: Leal, corajoso, mas pode ser teimoso.</li>
+                                <li>Saúde: Castrado e vacinas em dia.</li>
+                                <li>Ambiente Ideal: Família experiente com cães de temperamento forte, apartamento ou
+                                    casa.</li>
+                            </ul>
+                            <hr>
+                            <h6>Onde Encontrá-lo:</h6>
+                            <p>Thor está no Canil do Zero.<br>(Visitas com hora marcada).</p>
+                            <a href="chatbot.html" class="btn btn-success mt-3 w-100">Iniciar Processo de
+                                Adoção</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="modalOliver" tabindex="-1" aria-labelledby="modalOliverLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalOliverLabel">Perfil Detalhado: Oliver (6 meses)</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body row">
+                        <div class="col-md-6 text-center">
+                            <img src="imagens/OLIVER.png" class="img-fluid rounded mb-3" alt="Oliver">
+                            <h6>História de Oliver:</h6>
+                            <p>Oliver é um filhote resgatado com seus irmãos. É um poço de energia e curiosidade! Ideal
+                                para famílias que querem um gatinho ativo e disposto a brincar o dia todo.</p>
+                        </div>
+                        <div class="col-md-6">
+                            <h6>Detalhes para Adoção:</h6>
+                            <ul class="list-unstyled">
+                                <li>Temperamento: Brincalhão, curioso, sociável.</li>
+                                <li>Saúde: Vacinas em dia, será castrado ao completar 7 meses.</li>
+                                <li>Ambiente Ideal: Qualquer lar que o trate como parte da família.</li>
+                            </ul>
+                            <hr>
+                            <h6>Onde Encontrá-lo:</h6>
+                            <p>Oliver está no Berçário de Filhotes.<br>(Visitas com hora marcada).</p>
+                            <a href="chatbot.html" class="btn btn-success mt-3 w-100">Iniciar Processo de
+                                Adoção</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="modalLaila" tabindex="-1" aria-labelledby="modalLailaLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalLailaLabel">Perfil Detalhado: Laila (1 ano)</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body row">
+                        <div class="col-md-6 text-center">
+                            <img src="imagens/LAILA.png" class="img-fluid rounded mb-3" alt="Laila">
+                            <h6>História de Laila:</h6>
+                            <p>Laila é uma Golden dócil, entregue porque seus antigos tutores se mudaram. É treinada,
+                                obediente e um amor com crianças. Seu único requisito é muito afeto e tempo.</p>
+                        </div>
+                        <div class="col-md-6">
+                            <h6>Detalhes para Adoção:</h6>
+                            <ul class="list-unstyled">
+                                <li>Temperamento: Extremamente dócil, companheira e brincalhona.</li>
+                                <li>Saúde: Castrada e vacinas em dia.</li>
+                                <li>Ambiente Ideal: Famílias grandes ou que gostem de longas caminhadas.</li>
+                            </ul>
+                            <hr>
+                            <h6>Onde Encontrá-la:</h6>
+                            <p>Laila está no Projeto Cães Dóceis.<br>(Visitas com hora marcada).</p>
+                            <a href="chatbot.html" class="btn btn-success mt-3 w-100">Iniciar Processo de
+                                Adoção</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="modalCleo" tabindex="-1" aria-labelledby="modalCleoLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalCleoLabel">Perfil Detalhado: Cleo (5 anos)</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body row">
+                        <div class="col-md-6 text-center">
+                            <img src="imagens/CLEO.png" class="img-fluid rounded mb-3" alt="Cleo">
+                            <h6>História de Cleo:</h6>
+                            <p>Cleo foi entregue após sua tutora desenvolver uma alergia. Gatos Sphynx são conhecidos
+                                por serem muito apegados e buscarem calor. Ela precisa de mantas e um lugar quentinho.
+                            </p>
+                        </div>
+                        <div class="col-md-6">
+                            <h6>Detalhes para Adoção:</h6>
+                            <ul class="list-unstyled">
+                                <li>Temperamento: Muito afetuosa, busca contato físico constante.</li>
+                                <li>Saúde: Castrada, vacinas em dia. Requer cuidados com a pele (banhos regulares).</li>
+                                <li>Ambiente Ideal: Casa com aquecimento ou tutores que ofereçam muitas mantas.</li>
+                            </ul>
+                            <hr>
+                            <h6>Onde Encontrá-la:</h6>
+                            <p>Cleo está no Núcleo de Gatos Especiais.<br>(Visitas com hora marcada).</p>
+                            <a href="chatbot.html" class="btn btn-success mt-3 w-100">Iniciar Processo de
+                                Adoção</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="modalTobby" tabindex="-1" aria-labelledby="modalTobbyLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalTobbyLabel">Perfil Detalhado: Tobby (8 anos)</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body row">
+                        <div class="col-md-6 text-center">
+                            <img src="imagens/TOBBY.png" class="img-fluid rounded mb-3" alt="Tobby">
+                            <h6>História de Tobby:</h6>
+                            <p>Tobby é um Poodle idoso que busca um lugar para descansar. É muito calmo, adora colo e se
+                                contenta com passeios curtos. Ideal para idosos ou pessoas com rotina mais tranquila.
+                            </p>
+                        </div>
+                        <div class="col-md-6">
+                            <h6>Detalhes para Adoção:</h6>
+                            <ul class="list-unstyled">
+                                <li>Temperamento: Calmo, carinhoso, pouco ativo.</li>
+                                <li>Saúde: Castrado, vacinas em dia. Requer tosa regular.</li>
+                                <li>Ambiente Ideal: Apartamentos e lares sem muita escadaria.</li>
+                            </ul>
+                            <hr>
+                            <h6>Onde Encontrá-lo:</h6>
+                            <p>Tobby está no Lar dos Veteranos.<br>(Visitas com hora marcada).</p>
+                            <a href="chatbot.html" class="btn btn-success mt-3 w-100">Iniciar Processo de
+                                Adoção</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="modalZoe" tabindex="-1" aria-labelledby="modalZoeLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalZoeLabel">Perfil Detalhado: Zoe (3 anos)</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body row">
+                        <div class="col-md-6 text-center">
+                            <img src="imagens/ZOE.png" class="img-fluid rounded mb-3" alt="Zoe">
+                            <h6>História de Zoe:</h6>
+                            <p>Zoe é uma Maine Coon muito sociável, conhecida por seus miados que parecem "conversas". É
+                                uma gata grande e majestosa. Adora a presença humana e se dá bem com outros pets.</p>
+                        </div>
+                        <div class="col-md-6">
+                            <h6>Detalhes para Adoção:</h6>
+                            <ul class="list-unstyled">
+                                <li>Temperamento: Curiosa, sociável, "falante".</li>
+                                <li>Saúde: Castrada, vacinas em dia.</li>
+                                <li>Ambiente Ideal: Lar com espaço suficiente para ela se movimentar confortavelmente.
+                                </li>
+                            </ul>
+                            <hr>
+                            <h6>Onde Encontrá-la:</h6>
+                            <p>Zoe está no Projeto Gatos Gigantes.<br>(Visitas com hora marcada).</p>
+                            <a href="chatbot.html" class="btn btn-success mt-3 w-100">Iniciar Processo de
+                                Adoção</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="modalSalsicha" tabindex="-1" aria-labelledby="modalSalsichaLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalSalsichaLabel">Perfil Detalhado: Salsicha (2 anos)</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body row">
+                        <div class="col-md-6 text-center">
+                            <img src="imagens/SALSICHA.png" class="img-fluid rounded mb-3" alt="Salsicha">
+                            <h6>História de Salsicha:</h6>
+                            <p>Salsicha foi encontrado na estrada. É um cão muito engraçado, adora brincar e cavar. É um
+                                excelente cão de colo, mas é preciso cuidado com a coluna (evitar saltos).</p>
+                        </div>
+                        <div class="col-md-6">
+                            <h6>Detalhes para Adoção:</h6>
+                            <ul class="list-unstyled">
+                                <li>Temperamento: Brincalhão, alegre e teimoso.</li>
+                                <li>Saúde: Castrado, vacinas em dia.</li>
+                                <li>Ambiente Ideal: Casa térrea ou apartamento com rampas (não escadas).</li>
+                            </ul>
+                            <hr>
+                            <h6>Onde Encontrá-lo:</h6>
+                            <p>Salsicha está no Centro de Adoção Dachshund.<br>(Visitas com hora marcada).</p>
+                            <a href="chatbot.html" class="btn btn-success mt-3 w-100">Iniciar Processo de
+                                Adoção</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="modalMilo" tabindex="-1" aria-labelledby="modalMiloLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalMiloLabel">Perfil Detalhado: Milo (1 ano)</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body row">
+                        <div class="col-md-6 text-center">
+                            <img src="imagens/MILO.png" class="img-fluid rounded mb-3" alt="Milo">
+                            <h6>História de Milo:</h6>
+                            <p>Milo é um Bengal, uma raça muito ativa e inteligente. Ele adora água e escalar. É um gato
+                                que exige muita interação e enriquecimento ambiental para não ficar entediado.</p>
+                        </div>
+                        <div class="col-md-6">
+                            <h6>Detalhes para Adoção:</h6>
+                            <ul class="list-unstyled">
+                                <li>Temperamento: Extremamente ativo, curioso e inteligente.</li>
+                                <li>Saúde: Castrado, vacinas em dia.</li>
+                                <li>Ambiente Ideal: Casa com telas de proteção e muitos brinquedos.</li>
+                            </ul>
+                            <hr>
+                            <h6>Onde Encontrá-lo:</h6>
+                            <p>Milo está no Santuário Selvagem.<br>(Visitas com hora marcada).</p>
+                            <a href="chatbot.html" class="btn btn-success mt-3 w-100">Iniciar Processo de
+                                Adoção</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="modalKobe" tabindex="-1" aria-labelledby="modalKobeLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalKobeLabel">Perfil Detalhado: Kobe (6 anos)</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body row">
+                        <div class="col-md-6 text-center">
+                            <img src="imagens/KOBE.png" class="img-fluid rounded mb-3" alt="Kobe">
+                            <h6>História de Kobe:</h6>
+                            <p>Kobe é um Boxer adulto, brincalhão e enérgico, mas também muito focado no tutor. Foi
+                                entregue após o divórcio da família. Ele precisa de um líder calmo e consistente.</p>
+                        </div>
+                        <div class="col-md-6">
+                            <h6>Detalhes para Adoção:</h6>
+                            <ul class="list-unstyled">
+                                <li>Temperamento: Leal, corajoso, mas carece de atenção.</li>
+                                <li>Saúde: Castrado, vacinas em dia.</li>
+                                <li>Ambiente Ideal: Tutores ativos que possam levá-lo para correr.</li>
+                            </ul>
+                            <hr>
+                            <h6>Onde Encontrá-lo:</h6>
+                            <p>Kobe está na ONG Raças Grandes.<br>(Visitas com hora marcada).</p>
+                            <a href="chatbot.html" class="btn btn-success mt-3 w-100">Iniciar Processo de
+                                Adoção</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="modalNala" tabindex="-1" aria-labelledby="modalNalaLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalNalaLabel">Perfil Detalhado: Nala (4 anos)</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body row">
+                        <div class="col-md-6 text-center">
+                            <img src="imagens/NALA.png" class="img-fluid rounded mb-3" alt="Nala">
+                            <h6>História de Nala:</h6>
+                            <p>Nala é uma Ragdoll (Boneca de Pano), famosa por ser extremamente dócil e ficar mole no
+                                colo. É uma gata de temperamento ideal para a primeira vez de tutores de felinos.</p>
+                        </div>
+                        <div class="col-md-6">
+                            <h6>Detalhes para Adoção:</h6>
+                            <ul class="list-unstyled">
+                                <li>Temperamento: Tranquila, extremamente afetuosa, adora colo.</li>
+                                <li>Saúde: Castrada, vacinas em dia.</li>
+                                <li>Ambiente Ideal: Qualquer lar onde receba muita atenção.</li>
+                            </ul>
+                            <hr>
+                            <h6>Onde Encontrá-la:</h6>
+                            <p>Nala está no Projeto Adoce um Ragdoll.<br>(Visitas com hora marcada).</p>
+                            <a href="chatbot.html" class="btn btn-success mt-3 w-100">Iniciar Processo de
+                                Adoção</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="modalPatch" tabindex="-1" aria-labelledby="modalPatchLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalPatchLabel">Perfil Detalhado: Patch (7 meses)</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body row">
+                        <div class="col-md-6 text-center">
+                            <img src="imagens/PATCH.png" class="img-fluid rounded mb-3" alt="Patch">
+                            <h6>História de Patch:</h6>
+                            <p>Patch é um filhote de porte médio/grande. Ele se dá bem com qualquer pessoa ou pet. É a
+                                definição de "vira-lata caramelo" - alegre, inteligente e sempre pronto para brincar.
+                            </p>
+                        </div>
+                        <div class="col-md-6">
+                            <h6>Detalhes para Adoção:</h6>
+                            <ul class="list-unstyled">
+                                <li>Temperamento: Super sociável, ativo, aprende rápido.</li>
+                                <li>Saúde: Vacinas em dia, com castração agendada.</li>
+                                <li>Ambiente Ideal: Família que tenha tempo para o treinamento inicial de filhotes.</li>
+                            </ul>
+                            <hr>
+                            <h6>Onde Encontrá-lo:</h6>
+                            <p>Patch está na Casa dos Filhotes.<br>(Visitas com hora marcada).</p>
+                            <a href="chatbot.html" class="btn btn-success mt-3 w-100">Iniciar Processo de
+                                Adoção</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- FOOTER -->
+
+
+        <section class="footer">
+
+            <p>
+                &copy;2026 - Resgate & lar - todos os direitos reservados.
+            </p>
+        </section>
+
+    </main>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

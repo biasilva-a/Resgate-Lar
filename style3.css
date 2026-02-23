@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    width: 100%;
+    overflow-x: hidden;
+    background-color: #F5EDE0 !important;
+}
+
+/* CABEÇALHO E NAVEGAÇÃO*/
+header, 
+.navbar {
+    background-color: #DBC9B2 !important;
+    width: 100% !important;
+    min-height: 100px !important; 
+    margin-bottom: 0 !important;
+    border: none;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+}
+
+/* LOGO */
+.navbar-brand img {
+    height: 80px;
+    width: auto;
+    position: static;
+    display: block;
+}
+
+/* MENU */
+.navbar-nav {
+    margin-left: auto;
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.nav-link {
+    color: #3e2723 !important;
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-left: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.nav-link:hover {
+    color: #A67B51 !important;
+}
+
+
+/*carrosel de imagens*/
+.carousel, .carousel-inner, .carousel-item {
+    margin-top: 0 !important; 
+    border: none;
+}
+
+.carousel-item img {
+    height: 700px;
+    object-fit: cover;
+    width: 100%;
+    display: block; 
+}
+
+/*Texto*/ 
+
+.container .row {
+    align-items: center; 
+    padding: 40px 0; 
+}
+
+/* Estilização do Título  */
+.col-md-7 h2 {
+    color: #a67c52; 
+    font-size: 2.8rem; 
+    font-weight: 700;
+    margin-bottom: 25px;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* Estilização do Texto  */
+.col-md-7 p {
+    color: #3e2723; 
+    font-size: 1.3rem; 
+    line-height: 1.6;
+    padding-right: 30px; 
+}
+/* Estilização do Botão */
+.col-md-5 img {
+    border-radius: 15px; 
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s ease;
+}
+
+/*icones*/
+
+.secao-contadores {
+    background-color: #DBC9B2; 
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.icone-contador {
+    font-size: 2.5rem; 
+    color: #D9985F; 
+    margin-bottom: 10px;
+    display: block;
+}
+
+.coracao-icone {
+    color: #D9985F; 
+}
+
+.numero-contador {
+    font-size: 4rem; 
+    font-weight: 700;
+    color: #A67B51; 
+    line-height: 1;
+    margin-bottom: 5px;
+}
+
+/* Estilo para o Texto Descritivo */
+.texto-contador {
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: #4A4A4A;
+    text-transform: uppercase;
+
+}
+/*Fale conosco*/
+
+.fale-conosco {
+
+    background-color: #4A4A4A; 
+}
+
+
+.fale-conosco,
+.fale-conosco h1,
+.fale-conosco span {
+    color: #F5EDE0 !important; 
+}
+
+.icone-cor,
+.icone-social {
+    color: #F5EDE0 !important; 
+}
+
+
+.footer {
+    background-color: #DBC9B2;
+    color: #4A4A4A;
+    text-align: center;
+    padding: 20px;
+}
