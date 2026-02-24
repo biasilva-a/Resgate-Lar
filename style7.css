@@ -4,70 +4,32 @@
     box-sizing: border-box;
 }
 
+/* Ajuste no Body para tirar o espaço branco */
 body {
-    background-image: linear-gradient(#caaf95, #886e5f);
-    height: 100dvh; /* Alterado aqui */
+    background: linear-gradient(#caaf95, #886e5f);
+    height: 100dvh;
+    margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     font-family: 'Segoe UI', Tahoma, sans-serif;
-    overflow: hidden; 
+    overflow: hidden;
 }
 
-#/* O Quadrado Centralizado */
-chat-container {
+#chat-container {
     width: 95%;
     max-width: 450px;
-    height: 85dvh; /* Use 85 ou 90 para dar uma folga nas bordas */
+    height: 90dvh; /* Um pouco menor para não colar nas bordas */
     background: #ffffff;
     border-radius: 20px;
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /* Organiza em coluna */
     box-shadow: 0 10px 25px #0000001a;
-    overflow: hidden; 
+    overflow: hidden;
 }
 
-
-/* Cabeçalho */
-.chat-header {
-    background: #4b3a25;
-    color: #fffaf2;
-    padding: 15px;
-    display: flex;
-    align-items: center;
-    flex-shrink: 0;
-}
-
-/* Informações do Usuário */
-.user-info {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-}
-
-/* Foto do Bot */
-.bot-photo {
-    width: 45px;
-    height: 45px;
-    border-radius: 50%;
-    border: 2px solid white;
-    object-fit: cover;
-}
-
-/* Nome e Status do Bot */
-.bot-name {
-    font-weight: bold;
-    display: block;
-}
-
-.bot-status {
-    font-size: 12px;
-    opacity: 0.8;
-}
-
-/* Corpo do Chat */
 .chat-window {
-    flex: 1; 
+    flex: 1; /* Ocupa todo o meio, empurrando o resto para baixo */
     background: #ecdbc5;
     padding: 20px;
     overflow-y: auto;
@@ -75,10 +37,10 @@ chat-container {
     flex-direction: column;
 }
 
-/* Passos do Chat */
+/* Força os passos a ocuparem a altura toda para o botão descer */
 .step {
     display: none;
-    height: 100%;
+    flex: 1; 
     flex-direction: column;
 }
 
@@ -86,107 +48,30 @@ chat-container {
     display: flex;
 }
 
-/* Balões de Mensagem */
-.bubble {
-    background: white;
+/* ESTA É A CHAVE: Empurra os botões para o final do container */
+.action-area, .final-container {
+    margin-top: auto; 
     padding: 15px;
-    border-radius: 0 15px 15px 15px;
-    box-shadow: 0 1px 2px #0000001a;
-    margin-bottom: 15px;
-    color: #523e2c;
-    word-wrap: break-word;
+    width: 100%;
 }
 
-.doc-list,
-.email-info {
-    list-style: none;
-    margin: 10px 0;
-    font-size: 14px;
-    background: #d1c6b3;
-    padding: 10px;
-    border-radius: 8px;
-}
-
-/* Botões e Inputs */
-.action-area {
-    text-align: center;
-    margin-top: auto;
-    padding: 10px 0;
-}
-
-.btn-action {
+.btn-action, .btn-final {
     background: #5a5040;
     color: white;
     border: none;
-    padding: 12px 25px;
+    padding: 18px; /* Botão maior para facilitar o clique */
     border-radius: 30px;
     font-weight: bold;
     cursor: pointer;
-    transition: 0.2s;
-    width: auto;
-    max-width: 100%;
+    width: 100%; /* Botão largo ocupa a base */
+    font-size: 16px;
 }
 
-.btn-action:hover {
-    transform: scale(1.05);
-}
-
-/* Input de Email */
-.chat-input {
-    width: 100%;
-    padding: 12px;
-    margin-top: 10px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    font-size: 16px; 
-}
-
-.final-container {
-    text-align: center;
-    margin-top: auto;
-    padding-bottom: 5px;
-}
-
-/* Botão de sair*/
-.btn-final {
-    background: #5a5040;
-    color: white;
-    border: none;
-    padding: 15px 30px;
-    border-radius: 30px;
-    cursor: pointer;
-    width: 100%;
-    font-weight: bold;
-}
-
-/* Status do Bot */
-.status-text {
-    color: #666;
-    font-size: 14px;
-    margin-bottom: 10px;
-}
-
-/* Responsividade para Mobile */
+/* Responsividade Real para celular */
 @media (max-width: 480px) {
     #chat-container {
         width: 100%;
-        height: 100dvh; 
-        border-radius: 0; 
-    }
-
-    .chat-window {
-        padding: 15px;
-    }
-
-    .action-area, .final-container {
-        padding: 10px;
-        background: #ffffff;
-        border-top: 1px solid #ddd
-    }
-
-    .btn-action, .btn-final {
-        width: 100%; 
-        padding: 18px; 
-        font-size: 16px;
+        height: 100dvh;
+        border-radius: 0;
     }
 }
