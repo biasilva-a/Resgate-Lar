@@ -166,74 +166,19 @@
             <p>&copy;2026 - Resgate & Lar - Todos os direitos reservados.</p>
         </section>
 
-        <script type="module">
-            // Versão enxuta: importa Typebot, inicializa o popup e adiciona um MutationObserver
-            // para detectar quando o elemento <typebot-popup> é criado. O botão notifica o
-            // backend (/api/open-chat) e, em seguida, abre o popup.
-            import Typebot from 'https://cdn.jsdelivr.net/npm/@typebot.io/js@0/dist/web.js';
-
-            const TYPEBOT_ID = 'my-typebot-ec3s307';
-            const POPUP_ID = 'freddy-typebot-popup';
-
-            // Inicializa o popup (biblioteca cria elemento custom no DOM)
-            try {
-                Typebot.initPopup({ typebot: TYPEBOT_ID, id: POPUP_ID });
-            } catch (err) {
-                // Se falhar aqui, o fallback por postMessage continuará funcionando
-                console.debug('Typebot.initPopup apresentou erro (ignorado):', err?.message ?? err);
-            }
-
-            // Helper para abrir o popup
-            function openTypebotPopup() {
-                const popupEl = document.getElementById(POPUP_ID) || document.querySelector('typebot-popup');
-                if (popupEl && typeof popupEl.open === 'function') {
-                    popupEl.open();
-                    return true;
-                }
-
-                // Fallback pelo listener interno
-                window.postMessage({ isFromTypebot: true, command: 'open', id: POPUP_ID }, '*');
-                return false;
-            }
-
-            // Habilita o botão somente quando o Typebot aparecer (mais robusto)
-            const btn = document.getElementById('btn-abrir-freddy');
-            if (btn) {
-                btn.removeAttribute('data-bs-toggle');
-                btn.removeAttribute('data-bs-target');
-
-                // MutationObserver para detectar o elemento <typebot-popup>
-                const obs = new MutationObserver((mutations, observer) => {
-                    const found = document.getElementById(POPUP_ID) || document.querySelector('typebot-popup');
-                    if (found) {
-                        btn.disabled = false;
-                        observer.disconnect();
-                    }
-                });
-
-                obs.observe(document.body, { childList: true, subtree: true });
-
-                // Clique: notifica backend e abre o bot
-                btn.addEventListener('click', async (e) => {
-                    e.preventDefault();
-
-                    // Notifica o backend (telemetria simples). Falhas aqui não bloqueiam a abertura.
-                    try {
-                        await fetch('/api/open-chat', {
-                            method: 'POST',
-                            headers: { 'Content-Type': 'application/json' },
-                            body: JSON.stringify({ action: 'open_volunteer', timestamp: new Date().toISOString() })
-                        });
-                    } catch (err) {
-                        console.debug('Aviso: /api/open-chat não respondeu:', err?.message ?? err);
-                    }
-
-                    openTypebotPopup();
-                });
-            }
-        </script>
-
+        
     </main>
+<script>
+    const btn = document.getElementById('btn-abrir-freddy');
+    if (btn) {
+        btn.addEventListener('click', () => {
+            // Isso vai levar para a sua página do chat que você criou!
+            window.location.href = "chatbot.html"; 
+        });
+    }
+</script>
+
 </body>
+
 
 </html>
