@@ -6,7 +6,7 @@
 
 body {
     background-image: linear-gradient(#caaf95, #886e5f);
-    height: 100vh;
+    height: 100dvh; /* Alterado aqui */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -14,11 +14,11 @@ body {
     overflow: hidden; 
 }
 
-/* O Quadrado Centralizado */
-#chat-container {
+#/* O Quadrado Centralizado */
+chat-container {
     width: 95%;
     max-width: 450px;
-    height: 80vh;
+    height: 85dvh; /* Use 85 ou 90 para dar uma folga nas bordas */
     background: #ffffff;
     border-radius: 20px;
     display: flex;
@@ -26,6 +26,7 @@ body {
     box-shadow: 0 10px 25px #0000001a;
     overflow: hidden; 
 }
+
 
 /* Cabeçalho */
 .chat-header {
@@ -66,10 +67,12 @@ body {
 
 /* Corpo do Chat */
 .chat-window {
-    flex: 1;
+    flex: 1; 
     background: #ecdbc5;
     padding: 20px;
     overflow-y: auto;
+    display: flex;
+    flex-direction: column;
 }
 
 /* Passos do Chat */
@@ -167,19 +170,23 @@ body {
 @media (max-width: 480px) {
     #chat-container {
         width: 100%;
-        height: 100vh;
+        height: 100dvh; 
         border-radius: 0; 
     }
 
-    body {
-        background: #ecdbc5; 
+    .chat-window {
+        padding: 15px;
     }
 
-    .bubble {
-        max-width: 90%;
+    .action-area, .final-container {
+        padding: 10px;
+        background: #ffffff;
+        border-top: 1px solid #ddd
     }
-    
+
     .btn-action, .btn-final {
-        padding: 15px 20px;
+        width: 100%; 
+        padding: 18px; 
+        font-size: 16px;
     }
 }
