@@ -1,0 +1,14 @@
+{
+  "name": "resgate-lar-site",
+  "version": "1.0.0",
+  "description": "Servidor simples para o site Resgate & Lar (serve arquivos estáticos e um endpoint para abrir o chat)",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
