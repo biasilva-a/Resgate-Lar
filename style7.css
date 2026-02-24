@@ -4,32 +4,67 @@
     box-sizing: border-box;
 }
 
-/* Ajuste no Body para tirar o espaço branco */
 body {
     background: linear-gradient(#caaf95, #886e5f);
-    height: 100dvh;
-    margin: 0;
+    height: 100dvh; /* Altura dinâmica para evitar erro de rolagem no celular */
     display: flex;
     justify-content: center;
     align-items: center;
     font-family: 'Segoe UI', Tahoma, sans-serif;
-    overflow: hidden;
+    overflow: hidden; 
 }
 
 #chat-container {
     width: 95%;
     max-width: 450px;
-    height: 90dvh; /* Um pouco menor para não colar nas bordas */
+    height: 90dvh; /* Garante que o container não suma da tela */
     background: #ffffff;
     border-radius: 20px;
     display: flex;
-    flex-direction: column; /* Organiza em coluna */
-    box-shadow: 0 10px 25px #0000001a;
-    overflow: hidden;
+    flex-direction: column;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    overflow: hidden; 
 }
 
+/* Cabeçalho do Chat */
+.chat-header {
+    background: #4b3a25;
+    color: #fffaf2;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+/* AQUI ESTÁ A CORREÇÃO DA IMAGEM GIGANTE */
+.bot-photo {
+    width: 48px !important;
+    height: 48px !important;
+    border-radius: 50%;
+    border: 2px solid white;
+    object-fit: cover;
+    flex-shrink: 0; /* Impede que a foto seja esmagada */
+}
+
+.bot-name {
+    font-weight: bold;
+    display: block;
+}
+
+.bot-status {
+    font-size: 12px;
+    opacity: 0.8;
+}
+
+/* Janela de Mensagens */
 .chat-window {
-    flex: 1; /* Ocupa todo o meio, empurrando o resto para baixo */
+    flex: 1;
     background: #ecdbc5;
     padding: 20px;
     overflow-y: auto;
@@ -37,10 +72,10 @@ body {
     flex-direction: column;
 }
 
-/* Força os passos a ocuparem a altura toda para o botão descer */
+/* Estrutura dos Passos */
 .step {
     display: none;
-    flex: 1; 
+    flex: 1;
     flex-direction: column;
 }
 
@@ -48,30 +83,59 @@ body {
     display: flex;
 }
 
-/* ESTA É A CHAVE: Empurra os botões para o final do container */
-.action-area, .final-container {
-    margin-top: auto; 
+/* Balões */
+.bubble {
+    background: white;
     padding: 15px;
-    width: 100%;
+    border-radius: 0 15px 15px 15px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+    margin-bottom: 15px;
+    color: #523e2c;
 }
 
+/* EMPURRA OS BOTÕES PARA BAIXO */
+.action-area, .final-container {
+    margin-top: auto; 
+    padding: 10px 0;
+    text-align: center;
+}
+
+/* Botões do Chat */
 .btn-action, .btn-final {
     background: #5a5040;
     color: white;
     border: none;
-    padding: 18px; /* Botão maior para facilitar o clique */
+    padding: 15px;
     border-radius: 30px;
     font-weight: bold;
     cursor: pointer;
-    width: 100%; /* Botão largo ocupa a base */
+    width: 100%;
     font-size: 16px;
+    transition: 0.2s;
 }
 
-/* Responsividade Real para celular */
+.btn-action:hover {
+    background: #3e352a;
+}
+
+/* Input de Email */
+.chat-input {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+/* Responsividade Mobile */
 @media (max-width: 480px) {
     #chat-container {
         width: 100%;
         height: 100dvh;
-        border-radius: 0;
+        border-radius: 0; 
+    }
+    
+    .bubble {
+        max-width: 95%;
     }
 }
