@@ -5,8 +5,8 @@
 }
 
 body {
-    background: linear-gradient(#caaf95, #886e5f);
-    height: 100dvh; /* Altura dinâmica para evitar erro de rolagem no celular */
+    background-image: linear-gradient(#caaf95, #886e5f);
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -14,19 +14,20 @@ body {
     overflow: hidden; 
 }
 
+/* O Quadrado Centralizado */
 #chat-container {
     width: 95%;
     max-width: 450px;
-    height: 90dvh; /* Garante que o container não suma da tela */
+    height: 80vh;
     background: #ffffff;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    box-shadow: 0 10px 25px #0000001a;
     overflow: hidden; 
 }
 
-/* Cabeçalho do Chat */
+/* Cabeçalho */
 .chat-header {
     background: #4b3a25;
     color: #fffaf2;
@@ -36,22 +37,24 @@ body {
     flex-shrink: 0;
 }
 
+/* Informações do Usuário */
 .user-info {
     display: flex;
     align-items: center;
     gap: 12px;
 }
 
-/* AQUI ESTÁ A CORREÇÃO DA IMAGEM GIGANTE */
+/* AQUI ESTAVA O ERRO: Adicionei tamanho fixo para o Freddy não explodir */
 .bot-photo {
-    width: 48px !important;
-    height: 48px !important;
+    width: 45px !important;
+    height: 45px !important;
     border-radius: 50%;
     border: 2px solid white;
     object-fit: cover;
-    flex-shrink: 0; /* Impede que a foto seja esmagada */
+    flex-shrink: 0;
 }
 
+/* Nome e Status do Bot */
 .bot-name {
     font-weight: bold;
     display: block;
@@ -62,20 +65,18 @@ body {
     opacity: 0.8;
 }
 
-/* Janela de Mensagens */
+/* Corpo do Chat */
 .chat-window {
     flex: 1;
     background: #ecdbc5;
     padding: 20px;
     overflow-y: auto;
-    display: flex;
-    flex-direction: column;
 }
 
-/* Estrutura dos Passos */
+/* Passos do Chat */
 .step {
     display: none;
-    flex: 1;
+    height: 100%;
     flex-direction: column;
 }
 
@@ -83,39 +84,49 @@ body {
     display: flex;
 }
 
-/* Balões */
+/* Balões de Mensagem */
 .bubble {
     background: white;
     padding: 15px;
     border-radius: 0 15px 15px 15px;
-    box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+    box-shadow: 0 1px 2px #0000001a;
     margin-bottom: 15px;
     color: #523e2c;
+    word-wrap: break-word;
 }
 
-/* EMPURRA OS BOTÕES PARA BAIXO */
-.action-area, .final-container {
-    margin-top: auto; 
-    padding: 10px 0;
+.doc-list,
+.email-info {
+    list-style: none;
+    margin: 10px 0;
+    font-size: 14px;
+    background: #d1c6b3;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+/* Botões e Inputs */
+.action-area {
     text-align: center;
+    margin-top: auto;
+    padding: 10px 0;
 }
 
-/* Botões do Chat */
-.btn-action, .btn-final {
+.btn-action {
     background: #5a5040;
     color: white;
     border: none;
-    padding: 15px;
+    padding: 12px 25px;
     border-radius: 30px;
     font-weight: bold;
     cursor: pointer;
-    width: 100%;
-    font-size: 16px;
     transition: 0.2s;
+    width: auto;
+    max-width: 100%;
 }
 
 .btn-action:hover {
-    background: #3e352a;
+    transform: scale(1.05);
 }
 
 /* Input de Email */
@@ -125,17 +136,51 @@ body {
     margin-top: 10px;
     border: 1px solid #ccc;
     border-radius: 8px;
+    font-size: 16px; 
 }
 
-/* Responsividade Mobile */
+.final-container {
+    text-align: center;
+    margin-top: auto;
+    padding-bottom: 5px;
+}
+
+/* Botão de sair*/
+.btn-final {
+    background: #5a5040;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 30px;
+    cursor: pointer;
+    width: 100%;
+    font-weight: bold;
+}
+
+/* Status do Bot */
+.status-text {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+/* Responsividade para Mobile */
 @media (max-width: 480px) {
     #chat-container {
         width: 100%;
-        height: 100dvh;
+        height: 100vh;
         border-radius: 0; 
     }
-    
+
+    body {
+        background: #ecdbc5; 
+    }
+
     .bubble {
-        max-width: 95%;
+        max-width: 90%;
+    }
+
+    .btn-action, .btn-final {
+        padding: 15px 20px;
     }
 }
