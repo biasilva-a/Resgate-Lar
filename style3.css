@@ -59,10 +59,18 @@ header,
 }
 
 .carousel-item img {
-    height: 700px;
-    object-fit: cover;
+    height: 700px; /* Mantém igual para o Computador */
+    object-fit: cover; /* Garante qualidade sem distorcer */
     width: 100%;
     display: block; 
+}
+
+/* AJUSTE PARA O RESPONSIVO (CELULAR) */
+@media (max-width: 768px) {
+    .carousel-item img {
+        height: 350px; /* Altura ideal para telas de celular */
+        object-fit: cover; /* Mantém o foco da imagem e a nitidez */
+    }
 }
 
 /*Texto*/ 
