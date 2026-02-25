@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+/* Ajuste no Body para tirar o espaço branco */
 body {
     background-image: linear-gradient(#caaf95, #886e5f);
     height: 100vh;
@@ -76,7 +77,7 @@ body {
 /* Passos do Chat */
 .step {
     display: none;
-    height: 100%;
+    height: auto; 
     flex-direction: column;
 }
 
@@ -108,7 +109,7 @@ body {
 /* Botões e Inputs */
 .action-area {
     text-align: center;
-    margin-top: auto;
+    margin-top: 20px;
     padding: 10px 0;
 }
 
@@ -121,8 +122,8 @@ body {
     font-weight: bold;
     cursor: pointer;
     transition: 0.2s;
-    width: auto;
-    max-width: 100%;
+    width: fit-content;
+    margin: 0 auto;
 }
 
 .btn-action:hover {
@@ -141,8 +142,8 @@ body {
 
 .final-container {
     text-align: center;
-    margin-top: auto;
-    padding-bottom: 5px;
+    margin-top: 20px;
+    padding-bottom: 20px;
 }
 
 /* Botão de sair*/
