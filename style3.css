@@ -51,36 +51,37 @@ header,
     color: #A67B51 !important;
 }
 
-
-/*carrosel de imagens*/
+/* CARROSSEL DE IMAGENS - FOCO EM QUALIDADE */
 .carousel, .carousel-inner, .carousel-item {
     margin-top: 0 !important; 
     border: none;
+    background-color: #000;
 }
 
 .carousel-item img {
-    height: 700px; /* Mantém igual para o Computador */
-    object-fit: cover; /* Garante qualidade sem distorcer */
+    height: 700px;
     width: 100%;
-    display: block; 
+    object-fit: cover;
+    object-position: center;
+    /* Melhora a nitidez em redimensionamentos */
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
 }
 
-/* AJUSTE PARA O RESPONSIVO (CELULAR) */
+/* RESPONSIVO CELULAR (Sem estragar o PC) */
 @media (max-width: 768px) {
     .carousel-item img {
-        height: 350px; /* Altura ideal para telas de celular */
-        object-fit: cover; /* Mantém o foco da imagem e a nitidez */
+        height: 400px;
+        object-fit: cover;
     }
 }
 
-/*Texto*/ 
-
+/* TEXTO E CONTEÚDO */
 .container .row {
     align-items: center; 
     padding: 40px 0; 
 }
 
-/* Estilização do Título  */
 .col-md-7 h2 {
     color: #a67c52; 
     font-size: 2.8rem; 
@@ -89,22 +90,20 @@ header,
     font-family: 'Segoe UI', sans-serif;
 }
 
-/* Estilização do Texto  */
 .col-md-7 p {
     color: #3e2723; 
     font-size: 1.3rem; 
     line-height: 1.6;
     padding-right: 30px; 
 }
-/* Estilização do Botão */
+
 .col-md-5 img {
     border-radius: 15px; 
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); 
     transition: transform 0.3s ease;
 }
 
-/*icones*/
-
+/* CONTADORES */
 .secao-contadores {
     background-color: #DBC9B2; 
     padding-top: 50px;
@@ -130,21 +129,17 @@ header,
     margin-bottom: 5px;
 }
 
-/* Estilo para o Texto Descritivo */
 .texto-contador {
     font-size: 1.15rem;
     font-weight: 600;
     color: #4A4A4A;
     text-transform: uppercase;
-
 }
-/*Fale conosco*/
 
+/* FALE CONOSCO */
 .fale-conosco {
-
     background-color: #4A4A4A; 
 }
-
 
 .fale-conosco,
 .fale-conosco h1,
@@ -152,12 +147,11 @@ header,
     color: #F5EDE0 !important; 
 }
 
-.icone-cor,
-.icone-social {
+.icone-cor {
     color: #F5EDE0 !important; 
 }
 
-
+/* FOOTER */
 .footer {
     background-color: #DBC9B2;
     color: #4A4A4A;
