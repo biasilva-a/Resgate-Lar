@@ -72,14 +72,14 @@ body {
     background: #ecdbc5;
     padding: 20px;
     overflow-y: auto;
-    /* MUDANÇA AQUI: Alinha o conteúdo no topo para o botão subir */
-    display: block; 
 }
 
-/* Passos do Chat */
+/* Passos do Chat - Ajustado para PC e Celular */
 .step {
     display: none;
     flex-direction: column;
+    align-items: flex-start; /* Alinha balões à esquerda */
+    height: auto;            /* Deixa o conteúdo definir a altura */
 }
 
 .step.active {
@@ -95,6 +95,7 @@ body {
     margin-bottom: 15px;
     color: #523e2c;
     word-wrap: break-word;
+    width: 100%; /* Garante que preencha a largura no PC */
 }
 
 .doc-list,
@@ -109,9 +110,9 @@ body {
 
 /* Botões e Inputs */
 .action-area {
+    width: 100%;
     text-align: center;
-    /* MUDANÇA AQUI: Tiramos o margin-top auto de vez */
-    margin-top: 10px;
+    margin-top: 5px; /* Espaço curto para não descer demais */
     padding: 10px 0;
 }
 
@@ -124,7 +125,7 @@ body {
     font-weight: bold;
     cursor: pointer;
     transition: 0.2s;
-    width: auto;
+    display: inline-block; /* Mantém o botão centralizado pelo text-align */
 }
 
 .btn-action:hover {
@@ -142,6 +143,7 @@ body {
 }
 
 .final-container {
+    width: 100%;
     text-align: center;
     margin-top: 10px;
     padding-bottom: 5px;
@@ -179,7 +181,7 @@ body {
     }
 
     .bubble {
-        max-width: 90%;
+        max-width: 100%;
     }
 
     .btn-action, .btn-final {
