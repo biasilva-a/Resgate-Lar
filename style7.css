@@ -72,12 +72,13 @@ body {
     background: #ecdbc5;
     padding: 20px;
     overflow-y: auto;
+    /* MUDANÇA AQUI: Alinha o conteúdo no topo para o botão subir */
+    display: block; 
 }
 
 /* Passos do Chat */
 .step {
     display: none;
-    height: auto; 
     flex-direction: column;
 }
 
@@ -109,7 +110,8 @@ body {
 /* Botões e Inputs */
 .action-area {
     text-align: center;
-    margin-top: 20px;
+    /* MUDANÇA AQUI: Tiramos o margin-top auto de vez */
+    margin-top: 10px;
     padding: 10px 0;
 }
 
@@ -122,8 +124,7 @@ body {
     font-weight: bold;
     cursor: pointer;
     transition: 0.2s;
-    width: fit-content;
-    margin: 0 auto;
+    width: auto;
 }
 
 .btn-action:hover {
@@ -142,8 +143,8 @@ body {
 
 .final-container {
     text-align: center;
-    margin-top: 20px;
-    padding-bottom: 20px;
+    margin-top: 10px;
+    padding-bottom: 5px;
 }
 
 /* Botão de sair*/
