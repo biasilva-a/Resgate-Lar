@@ -19,17 +19,14 @@ body {
 #chat-container {
     width: 95%;
     max-width: 450px;
-    min-height: 500px; 
-    max-height: 90vh;
+    height: 80vh;
     background: #ffffff;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
     box-shadow: 0 10px 25px #0000001a;
-    overflow: hidden;
-    margin: 20px; 
+    overflow: hidden; 
 }
-
 
 /* Cabeçalho */
 .chat-header {
